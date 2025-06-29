@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            color: black;
+            background-color: lightgray;
+			font-family: Arial;
+        }
+        iframe
+        {
+            width: 1100px;
+            height: 650px;
+            border:none;
+            background-color: white;
+        }
+        h1
+        {
+            font-size: 40px;
+            color: black;
+        }
+        h2
+        {
+            font-size: 30px;
+            color: black;
+            margin-bottom: 5px;
+        }
+        p
+        {
+            text-align: left;
+            font-size: 22px;
+            width: 1000px;
+        }
+        .border_div
+        {
+            border: none;
+            display: flex;
+            flex-direction: column;
+            border-bottom: none;
+        }
+        .text_wrapper
+        {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Analysis of COVID-19 pandemic in Italy</h1>
+    <img style='width: 300px;height: 150px;' src="flag.png">
+    <p style="font-size: 17px;text-align: center;">Authors: Roksana Malinowska and Weronika Trawińska</p>
+
+    <h2>Maps of total COVID-19 positive cases and total deaths in regions of Italy per 10 000 residents.</h2>
+
+    <div class="border_div">
+        <iframe src="for_report/cases_map.html" title="map_of_cases"></iframe>
+        <iframe src="for_report/deaths_map.html" title="map_of_deaths"></iframe>
+    </div>
+	<h2>Correlation of number of total COVID-19 cases and deaths in regions of Italy</h2>
+	<div class="border_div">
+		<iframe src="for_report/cases_vs_deaths.html" title="correlation"></iframe>
+	</div>
+	<h2>Correlation of number of total COVID-19 cases and the density in regions of Italy</h2>
+	<div class="border_div">
+		<iframe src="for_report/densities_vs_cases.html" title="correlation"></iframe>
+	</div>
+    <h2>Daily positive COVID-19 cases and deaths in Italy with marked seasons and comparison to Poland</h2>
+    <div class="border_div">
+        <iframe src="for_report/italy_cases.html" title="italy_cases"></iframe>
+		<iframe src="for_report/poland_cases.html" title="poland_cases"></iframe>
+        <iframe src="for_report/italy_deaths.html" title="italy_deaths"></iframe>
+        <iframe src="for_report/poland_deaths.html" title="poland_deaths"></iframe>
+	</div>
+
+	
+    <h2>Cumulative COVID-19 positive cases and deaths in different countries</h2>
+
+    <div class="border_div">
+        <iframe src="for_report/countries_total_cases.html" title="countries_total_cases"></iframe>
+        <iframe src="for_report/countries_total_deaths.html" title="countries_total_deaths"></iframe>
+    </div>
+
+    <h2>Vaccination</h2>
+    <div class="border_div">
+		<iframe src="for_report/types_of_vaccines.html" title="types_of_vaccines"></iframe>
+		<iframe src="for_report/vaccinations_vs_age.html" title="age_vaccines"></iframe>
+        <iframe src="for_report/vaccination_ratio.html" title="vaccine_ratio"></iframe>
+    </div>
+
+    <h2>Impact on economy</h2>
+    <div class="border_div">
+		<iframe src="for_report/unemployment.html" title="unemployment"></iframe>
+		<iframe src="for_report/gdp.html" title="gdp"></iframe>
+    </div>
+
+	<footer>
+        <div class="footer-content">
+          <br><br>
+          Sources: <br>
+          <a href="https://covid19.who.int/data">covid19.who.int/data</a><br>
+          <a href="https://github.com/pcm-dpc/COVID-19">github.com/pcm-dpc/COVID-19</a><br>
+          <a href="https://en.wikipedia.org/wiki/Regions_of_Italy">en.wikipedia.org/wiki/Regions_of_Italy</a><br>
+          <a href="https://github.com/italia/covid19-opendata-vaccini">github.com/italia/covid19-opendata-vaccini</a><br>
+          <a href="https://www.gov.pl/web/szczepimysie/raport-szczepien-przeciwko-covid-19https://www.gov.pl/web/szczepimysie/raport-szczepien-przeciwko-covid-19">gov.pl</a><br>
+          <a href="https://ec.europa.eu/eurostat/databrowser/view/UNE_RT_M__custom_6502360/default/table?lang=en">ec.europa.eu/eurostat</a><br>
+          <a href="https://economy-finance.ec.europa.eu/economic-surveillance-eu-economies/italy/economic-forecast-italy_en">economy-finance.ec.europa.eu</a><br>
+
+
+        </div>
+      </footer>
+</body>
+</html>
